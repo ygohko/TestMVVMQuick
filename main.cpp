@@ -23,8 +23,10 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
+// Qt includes
 #include <QQmlContext>
 
+// TestMVVMQuick includes
 #include "TQMainWindowViewModel.h"
 
 int main(int argc, char *argv[]) {
