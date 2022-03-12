@@ -33,6 +33,7 @@ Window {
 
     ColumnLayout {
         anchors.fill: parent
+        anchors.margins: 10
 
         GridLayout {
             id: gridLayout

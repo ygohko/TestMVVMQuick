@@ -33,16 +33,16 @@ public:
     TQMainWindowViewModel();
     virtual ~TQMainWindowViewModel();
     Q_INVOKABLE void calculate();
-    Q_PROPERTY(QString price MEMBER price NOTIFY priceChanged);
-    Q_PROPERTY(QString total MEMBER total NOTIFY totalChanged);
+    Q_PROPERTY(int price MEMBER price NOTIFY priceChanged);
+    Q_PROPERTY(int total MEMBER total NOTIFY totalChanged);
 
 signals:
     void priceChanged();
     void totalChanged();
 
 private:
-    QString price;
-    QString total;
+    int price;
+    int total;
 };
 
 #endif

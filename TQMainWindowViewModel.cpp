@@ -29,7 +29,8 @@
 #include "TQTaxCalculator.h"
 
 TQMainWindowViewModel::TQMainWindowViewModel() {
-    // Do nothing
+    this->price = 0;
+    this->total = 0;
 }
 
 TQMainWindowViewModel::~TQMainWindowViewModel() {
@@ -37,7 +38,7 @@ TQMainWindowViewModel::~TQMainWindowViewModel() {
 }
 
 void TQMainWindowViewModel::calculate() {
-    auto price = this->price.toInt();
+    auto price = this->price;
     QScopedPointer<TQTaxCalculator> calculator(new TQTaxCalculator(price));
-    this->setProperty("total", QVariant(QString("%1").arg(calculator->execute())));
+    this->setProperty("total", QVariant(calculator->execute()));
 }
