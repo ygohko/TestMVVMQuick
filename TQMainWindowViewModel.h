@@ -23,6 +23,7 @@
 #ifndef TQMAINWINDOWVIEWMODEL_H
 #define TQMAINWINDOWVIEWMODEL_H
 
+// Qt includes
 #include <QObject>
 
 class TQMainWindowViewModel : public QObject {

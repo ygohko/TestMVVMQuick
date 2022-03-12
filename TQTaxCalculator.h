@@ -23,8 +23,7 @@
 #ifndef TQTAXCALCULATOR_H
 #define TQTAXCALCULATOR_H
 
-class TQTaxCalculator
-{
+class TQTaxCalculator {
 public:
     TQTaxCalculator(int price);
     virtual ~TQTaxCalculator();
@@ -34,4 +33,4 @@ private:
     int price;
 };
 
-#endif // TQTAXCALCULATOR_H
+#endif

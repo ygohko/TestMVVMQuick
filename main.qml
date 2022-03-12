@@ -29,7 +29,7 @@ Window {
     width: 320
     height: 150
     visible: true
-    title: qsTr("Hello World")
+    title: qsTr("TestMVVMQuick")
 
     ColumnLayout {
         anchors.fill: parent

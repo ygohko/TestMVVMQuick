@@ -22,6 +22,10 @@
 
 #include "TQMainWindowViewModel.h"
 
+// Qt includes
+#include <QVariant>
+
+// TestMVVMQuick includes
 #include "TQTaxCalculator.h"
 
 TQMainWindowViewModel::TQMainWindowViewModel() {
@@ -30,6 +34,5 @@ TQMainWindowViewModel::TQMainWindowViewModel() {
 void TQMainWindowViewModel::calculate() {
     auto price = this->price.toInt();
     QScopedPointer<TQTaxCalculator> calculator(new TQTaxCalculator(price));
-    this->total = QString("%1").arg(calculator->execute());
-    emit this->totalChanged();
+    this->setProperty("total", QVariant(QString("%1").arg(calculator->execute())));
 }
