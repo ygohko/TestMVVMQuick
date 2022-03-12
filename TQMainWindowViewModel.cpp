@@ -29,6 +29,11 @@
 #include "TQTaxCalculator.h"
 
 TQMainWindowViewModel::TQMainWindowViewModel() {
+    // Do nothing
+}
+
+TQMainWindowViewModel::~TQMainWindowViewModel() {
+    // Do nothing
 }
 
 void TQMainWindowViewModel::calculate() {

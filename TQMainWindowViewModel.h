@@ -31,6 +31,7 @@ class TQMainWindowViewModel : public QObject {
 
 public:
     TQMainWindowViewModel();
+    virtual ~TQMainWindowViewModel();
     Q_INVOKABLE void calculate();
     Q_PROPERTY(QString price MEMBER price NOTIFY priceChanged);
     Q_PROPERTY(QString total MEMBER total NOTIFY totalChanged);
